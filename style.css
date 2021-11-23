@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-size: 250vh;
+  color: rgb(7, 43, 109);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+.image {
+    background-image: url(https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+}
+
+.fa-snowflake {
+  color: #fff;
+  position: absolute;
+  top: -20px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+
+.countdown-container {
+  display: flex;
+}
+
+.time {
+  display: flex;
+  font-size: 2rem;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.time h1 {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.time small {
+  color: rgb(7, 43, 109);
+  font-size: 3rem;
+}
+
+@media (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (max-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (max-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (max-width:1281px) { /* hi-res laptops and desktops */ }
